@@ -1,6 +1,6 @@
 ### VARIABLES TO CHANGE - START
-PROJECT_ID=
-SERVICE_NAME=
+PROJECT_ID=molly-liang
+SERVICE_NAME=my-cool-website
 ### VARIABLES TO CHANGE - END
 
 # ----------- Manual Deployment ------------ #
