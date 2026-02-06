@@ -71,7 +71,7 @@ if [ $? -ne 0 ]; then
       --workload-identity-pool="${WORKLOAD_IDENTITY_POOL_NAME}" \
       --display-name="My GitHub repo Provider" \
       --attribute-mapping="google.subject=assertion.sub,attribute.actor=assertion.actor,attribute.repository=assertion.repository,attribute.repository_owner=assertion.repository_owner" \
-      --attribute-condition="assertion.repository_owner == '${GITHUB_ORG}'" \
+      --attribute-condition="assertion.repository == '${GITHUB_ORG}/${GITHUB_REPO}'" \
       --issuer-uri="https://token.actions.githubusercontent.com"
   if [ $? -ne 0 ]; then echo "creating an oidc failed!"; exit 1; fi
 else
